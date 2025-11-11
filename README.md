@@ -7,3 +7,5 @@ Contributors:
 - Gonçalo Batista - 122623
 - Afonso Lopes - 122631
 - Rafael Silva - 122638
+
+- Dead code encontrado na classe Galleon.java, pois a verificação do Bearing já é feita na superclasse Ship.java. Assim, o código foi comentado para resolver o problema.
