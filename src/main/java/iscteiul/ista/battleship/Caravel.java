@@ -14,8 +14,8 @@ public class Caravel extends Ship {
     public Caravel(Compass bearing, IPosition pos) throws NullPointerException, IllegalArgumentException {
         super(Caravel.NAME, bearing, pos);
 
-        if (bearing == null)
-            throw new NullPointerException("ERROR! invalid bearing for the caravel");
+        //if (bearing == null)
+        //    throw new NullPointerException("ERROR! invalid bearing for the caravel");
 
         switch (bearing) {
             case NORTH:
@@ -42,6 +42,10 @@ public class Caravel extends Ship {
     @Override
     public Integer getSize() {
         return SIZE;
+    }
+
+    public String getName() {
+        return NAME;
     }
 
 }

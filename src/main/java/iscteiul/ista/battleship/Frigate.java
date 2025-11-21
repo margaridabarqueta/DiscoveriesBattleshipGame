@@ -39,4 +39,8 @@ public class Frigate extends Ship {
         return Frigate.SIZE;
     }
 
+    public String getName() {
+        return Frigate.NAME + " " + Frigate.SIZE;
+    }
+
 }
