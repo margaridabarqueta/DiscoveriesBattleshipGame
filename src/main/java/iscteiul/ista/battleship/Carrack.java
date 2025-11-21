@@ -39,4 +39,8 @@ public class Carrack extends Ship {
         return Carrack.SIZE;
     }
 
+    public String getName() {
+        return Carrack.NAME;
+    }
+
 }

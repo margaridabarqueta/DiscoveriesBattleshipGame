@@ -24,7 +24,7 @@ public enum Compass {
         return "" + c;
     }
 
-    static Compass charToCompass(char ch) {
+    public static Compass charToCompass(char ch) {
         Compass bearing;
         switch (ch) {
             case 'n':

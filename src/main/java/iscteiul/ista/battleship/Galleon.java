@@ -3,6 +3,9 @@
  */
 package iscteiul.ista.battleship;
 
+import java.util.Set;
+import java.util.stream.Collectors;
+
 public class Galleon extends Ship {
     private static final Integer SIZE = 5;
     private static final String NAME = "Galeao";
@@ -46,6 +49,10 @@ public class Galleon extends Ship {
         return Galleon.SIZE;
     }
 
+    public String getName() {
+        return Galleon.NAME;
+    }
+
     private void fillNorth(IPosition pos) {
         for (int i = 0; i < 3; i++) {
             getPositions().add(new Position(pos.getRow(), pos.getColumn() + i));
@@ -55,12 +62,21 @@ public class Galleon extends Ship {
     }
 
     private void fillSouth(IPosition pos) {
-        for (int i = 0; i < 2; i++) {
-            getPositions().add(new Position(pos.getRow() + i, pos.getColumn()));
+        // Bloco 1: Adiciona 2 posições verticais (i=0, 1) na coluna C
+        for (int i = 0; i < 2; i++) { // i = 0, 1
+            getPositions().add(new Position(pos.getRow() + i, pos.getColumn())); // (R+0, C), (R+1, C)
         }
-        for (int j = 2; j < 5; j++) {
-            getPositions().add(new Position(pos.getRow() + 2, pos.getColumn() + j - 3));
+        // [5, 5], [6, 5]
+
+        // Bloco 2: Adiciona 3 posições horizontais na Row R+2
+        for (int j = 2; j < 5; j++) { // j = 2, 3, 4
+            // Coluna: C + j - 3
+            // j=2 => C + 2 - 3 = C - 1 = 4
+            // j=3 => C + 3 - 3 = C + 0 = 5
+            // j=4 => C + 4 - 3 = C + 1 = 6
+            getPositions().add(new Position(pos.getRow() + 2, pos.getColumn() + j - 3)); // (R+2, C-1), (R+2, C), (R+2, C+1)
         }
+        // [7, 4], [7, 5], [7, 6]
     }
 
     private void fillEast(IPosition pos) {
