@@ -27,11 +27,19 @@ Basic academic version of Battleship game to build upon.
 
 # Regras do Jogo
 
+Relembremos as funcionalidades de um jogo da batalha naval. Depois dos navios terem sido
+posicionados, cada jogador, `a vez, “atira trˆes tiros” sobre a frota advers´aria, referindo as
+respectivas coordenadas dos tiros (linha, coluna). O advers´ario deve referir o resultado dessa
+rajada de trˆes tiros, informando se acertou em um ou mais navios e de que tipo, bem como
+os tiros na ´agua! Cada jogador vai registando na grelha do oponente os resultados dos seus
+tiros, identificando os navios afundados. Ganha o jogo o primeiro que atingir todos os navios
+da frota advers´aria. Pode experimentar jogar online aqui, mas aten¸c˜ao que neste exemplo a
+forma e n´umero de navios n˜ao s˜ao os que tradicionalmente usamos em Portugal.
 
 
 ---------------------------------------------------------------------------
 
-# Links
+
 
 
 
