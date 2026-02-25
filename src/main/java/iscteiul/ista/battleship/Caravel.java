@@ -1,15 +1,32 @@
 /**
- *
- */
+ * */
 package iscteiul.ista.battleship;
 
+/**
+ * Representa uma Caravele no jogo Battleship.
+ * Uma Caravela é um tipo de navio com um tamanho fixo de 2 unidades.
+ 
+ * @version 1.0
+ */
 public class Caravel extends Ship {
+    
+    /**
+     * O tamanho fixo da Caravela.
+     */
     private static final Integer SIZE = 2;
+    
+    /**
+     * O nome identificador deste tipo de navio.
+     */
     private static final String NAME = "Caravela";
 
     /**
-     * @param bearing the bearing where the Caravel heads to
-     * @param pos     initial point for positioning the Caravel
+     * Constrói uma nova Caravela com uma orientação e posição inicial específicas.
+     * O método calcula e preenche a lista de posições ocupadas pelo navio com base no seu tamanho.
+     * * @param bearing a direção (norte, sul, este, oeste) para onde a Caravela está virada.
+     * @param pos a posição inicial (ponto de origem) para posicionar o navio.
+     * @throws NullPointerException se o bearing for nulo.
+     * @throws IllegalArgumentException se o bearing for inválido para a lógica da caravela.
      */
     public Caravel(Compass bearing, IPosition pos) throws NullPointerException, IllegalArgumentException {
         super(Caravel.NAME, bearing, pos);
@@ -34,10 +51,10 @@ public class Caravel extends Ship {
 
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see battleship.Ship#getSize()
+    /**
+     * Devolve o tamanho da Caravela.
+     * * @return o número de células que o navio ocupa (neste caso, 2).
+     * @see iscteiul.ista.battleship.Ship#getSize()
      */
     @Override
     public Integer getSize() {
