@@ -35,7 +35,7 @@ os tiros na água! Cada jogador vai registando na grelha do oponente os resultad
 tiros, identificando os navios afundados. Ganha o jogo o primeiro que atingir todos os navios
 da frota adversária. Pode experimentar jogar online aqui, mas atenção que neste exemplo a
 forma e número  de navios não são os que tradicionalmente usamos em Portugal.
-
+   
 
 ---------------------------------------------------------------------------
 
