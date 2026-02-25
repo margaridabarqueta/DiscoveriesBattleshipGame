@@ -238,7 +238,7 @@ public class Tasks {
      * Executa uma ronda de disparos (três tiros).
      *
      * @param in scanner de entrada
-     * @param game contexto do jogo
+     * @param game contexto do jogo 
      */
     static void firingRound(Scanner in, IGame game) {
         for (int i = 0; i < NUMBER_SHOTS; i++) {
