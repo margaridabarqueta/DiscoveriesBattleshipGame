@@ -34,7 +34,7 @@ rajada de três tiros, informando se acertou em um ou mais navios e de que tipo,
 os tiros na água! Cada jogador vai registando na grelha do oponente os resultados dos seus
 tiros, identificando os navios afundados. Ganha o jogo o primeiro que atingir todos os navios
 da frota adversária. Pode experimentar jogar online aqui, mas atenção que neste exemplo a
-forma e número de navios não são os que tradicionalmente usamos em Portugal.
+forma e número  de navios não são os que tradicionalmente usamos em Portugal.
 
 
 ---------------------------------------------------------------------------
